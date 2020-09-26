@@ -18,14 +18,19 @@
 
 </h1>
 
-<p id= "demo"></p>
+
 
 
 <button onclick="createText()">Click me</button>
+
+<p id= "demo"></p>
+
   <script>
     function createText(){
 	
-	document.getElementById("demo").innerHTML=+"Hello";
+	let demoText=document.getElementById("demo").innerHTML;
+	
+	document.getElementById("demo").innerHTML="Hello"+demoText;
 	
 	}
 	
